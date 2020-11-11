@@ -69,3 +69,17 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+/* Colored Square Styles
+    ______________________________________________ */
+#option1 {
+    background-color: yellow;
+}
+
+#option2 {
+    background-color: red;
+}
+
+#option3 {
+    background-color: purple;
+}
