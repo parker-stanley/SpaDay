@@ -72,6 +72,17 @@ body {
 
 /* Colored Square Styles
     ______________________________________________ */
+#squares {
+    
+}
+
+#squares div {
+    height: 70px;
+    width: 70px;
+    border: medium;
+    float: left;
+}
+
 #option1 {
     background-color: yellow;
 }
@@ -82,4 +93,12 @@ body {
 
 #option3 {
     background-color: purple;
+}
+
+#option4 {
+    background-color: green;
+}
+
+#option5 {
+    background-color: blue; 
 }
