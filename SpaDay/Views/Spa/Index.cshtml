@@ -3,7 +3,7 @@
 *@
 @{
 }
-<form method='post'>
+<form method='post' action="/menu">
 
     Name:
     <br>
@@ -22,10 +22,10 @@
 
     Manicure or Pedicure?
     <br>    
-    <select name='manipedi'>
-        <option value='manicure'>Manicure</option>    
-        <option value='pedicure'>Pedicure</option>      
-    </select>
+    <input type="checkbox" name='mani' value="manicure" />
+    <label>Manicure</label><br />
+    <input type="checkbox" name="pedi" value="pedicure" />
+    <label>Pedicure</label><br />
     <br>
     
     <input type='submit' value='Submit'>    
