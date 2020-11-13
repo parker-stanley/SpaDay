@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@if (ViewBag.error != null)
+{
+    <p class="alert-danger">@ViewBag.error</p>
+}
+
+<form method="post" action="/User/SubmitAddUserForm">
+        <label for="username">Username</label>
+        <input type="text" name="username" value=@ViewBag.userName /> <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" value=@ViewBag.email /> <br />
+        <label for="password">Password</label>
+        <input type="password" name="password" /> <br />
+        <label for="passwordConfirm">Confirm Password</label>
+        <input type="password" name="verify" /> <br />
+        <input type="submit" name="Submit" />
+    </form>
+
+@* original attempt, requires if statement because of how i set up the object
+    @if (ViewBag.error != null)
+{
+    <p class="alert-danger">@ViewBag.error</p>
+    <form method="post" action="/User/SubmitAddUserForm">
+        <label for="username">Username</label>
+        <input type="text" name="username" value=@ViewBag.tempUser.Username /> <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" value=@ViewBag.tempUser.Email /> <br />
+        <label for="password">Password</label>
+        <input type="password" name="password" value=@ViewBag.tempUser.Password /> <br />
+        <label for="passwordConfirm">Confirm Password</label>
+        <input type="password" name="verify" /> <br />
+        <input type="submit" name="Submit" />
+    </form>
+}
+else
+{
+    <form method="post" action="/User/SubmitAddUserForm">
+        <label for="username">Username</label>
+        <input type="text" name="username" /> <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" /> <br />
+        <label for="password">Password</label>
+        <input type="password" name="password" /> <br />
+        <label for="passwordConfirm">Confirm Password</label>
+        <input type="password" name="verify" /> <br />
+        <input type="submit" name="Submit" />
+    </form>
+}*@
